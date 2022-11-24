@@ -1,0 +1,20 @@
+Zad. 1. Korzystając z faktu, że nieskończony iloczyn
+
+(0.5)^1/2 * (0.5+0.5(0.5)^1/2)^1/2  * ( 0.5 + 0.5(0.5+0.5(0.5)^1/2)^1/2 )^1/2 * .........
+
+ma wartość 2/PI napisać funkcję (jedną!) wyznaczającą wartość liczby PI z zadaną dokładnością.
+Dokładność zostanie osiągnięta jeśli wartość bezwzględna z różnicy z dwóch sąsiednich przybliżeń
+liczby PI będzie mniejsza od tej dokładności.  W rozwiązaniu wykorzystać rekurencję ogonową.
+Zadanie wykonać Scala.
+
+Zad. 2. Napisać w OCaml funkcję typu 'a list -> 'a -> int -> 'a list wykorzystującą rekurencję ogonową,
+która dla danej listy zwraca podlistę o zadanej długości od elementy o zadanej wartości  począwszy.
+
+Zad. 3. Dla poniżej zdefiniowanego typu
+
+type 'a wybor = Tak | Nie of 'a * 'a wybor;;
+
+napisać w OCaml; funkcję typu 'a wybor -> 'a list, która dla dowolnie zagnieżdżonego obiektu
+Nie przedstawi w postaci listy elementy o typie różnym niż 'a wybor.
+Do konstrukcji obiektu Nie zdefiniować operator (&&)wykorzystujący odpowiedni konstruktor.
+
